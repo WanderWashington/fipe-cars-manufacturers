@@ -34,11 +34,11 @@ To search by manufacturer in the cars, add  `?manufacturer=` in the route and ty
 
 # Extra commands:
 
-Command to load the json with name `marcas.json`:
+Load the json with name `marcas.json`:
 
 ```python manage.py get_data```
 
     
-Command to get cars data of a website, using selenium to get data and save in database using Django methods:
+Get cars data of a website, using selenium to get data and save in database using Django methods:
 
 ```python manage.py scrap_data_selenium```
