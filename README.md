@@ -6,12 +6,12 @@ Developed in Django and Django Rest Framework, this project contains a API to ge
 
 # Endpoints
 
-Search in manufacturer by code, not pk:
+Search in manufacturer by `code`, not pk:
 
-    /marca/?code=<code>
+    /marca/?code={code}
 
 Search in the cars, by manufacturer `pk` :
 
-    /veiculo/?manufacturer=pk
+    /veiculo/?manufacturer={pk}
 
 
