@@ -1,4 +1,7 @@
 # Fipe cars and manufacturers
+
+
+
 Developed in Django and Django Rest Framework, this project contains a API to get a Cars and Manufacturers, based in FIPE. Have a two routes:
 
     /veiculo/    
@@ -14,4 +17,12 @@ To search by manufacturer in the cars, add  `?manufacturer=` in the route and ty
 
     /veiculo/?manufacturer={pk}
 
+# Installation
+1.  To use this application, create your database and configure it in the `settings.py`  file.
 
+2.  Load the migrations with the command:
+
+    ```python manage.py migrate```
+
+3.  Load the fixtures with the cars and manufactures data:
+    ```python manage.py loaddata data.json```
