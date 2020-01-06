@@ -25,4 +25,14 @@ To search by manufacturer in the cars, add  `?manufacturer=` in the route and ty
     ```python manage.py migrate```
 
 3.  Load the fixtures with the cars and manufactures data:
+
     ```python manage.py loaddata data.json```
+
+# Extra commands:
+
+Command to load the json with name `marcas.json`:
+
+    ```python manage.py get_data```
+    
+Command to get cars data of a website, using selenium to get data and save in database using Django methods:
+    ```python manage.py scrap_data```
