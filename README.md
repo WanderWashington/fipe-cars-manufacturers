@@ -12,6 +12,6 @@ In this version, is possible search by manufacturer code:
 
 Search in the cars, by manufacturer `pk` :
 
-    /veiculo/?manufacturer=pk
+    /veiculo/?manufacturer=`pk`
 
 
