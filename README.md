@@ -18,7 +18,11 @@ To search by manufacturer in the cars, add  `?manufacturer=` in the route and ty
     /veiculo/?manufacturer={pk}
 
 # Installation
-1.  To use this application, create your database and configure it in the `settings.py`  file.
+1.  Install the requirements file, with the command:
+
+    ```pip install -r requirements.txt```
+
+2.  Create your database and configure it in the `settings.py`  file.
 
 2.  Load the migrations with the command:
 
