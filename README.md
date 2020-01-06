@@ -19,12 +19,12 @@ Developed in Django and Django Rest Framework, this project contains a API to ge
 
     ```python manage.py loaddata data.json```
 
-### Endpoints:
+# Endpoints:
 
     /veiculo/    
     /marca/    
 
-# Search parameter:
+## Search parameter:
 
 To search by code in manufacturer add `?code=` in the route and type the `code` number that want search:
 
@@ -34,7 +34,7 @@ To search by manufacturer in the cars, add  `?manufacturer=` in the route and ty
 
     /veiculo/?manufacturer={pk}
 
-# Extra commands:
+## Extra commands:
 
 Load the json with name `marcas.json`:
 
