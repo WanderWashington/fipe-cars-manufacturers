@@ -3,7 +3,7 @@
 
 
 Developed in Django and Django Rest Framework, this project contains a API to get a Cars and Manufacturers, based in FIPE. 
-### Routes:
+### Endpoints:
 
     /veiculo/    
     /marca/    
