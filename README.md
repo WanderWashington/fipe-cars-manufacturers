@@ -4,13 +4,13 @@ Developed in Django and Django Rest Framework, this project contains a API to ge
     /veiculo/    
     /marca/    
 
-# Endpoints
+# Search parameter
 
-Search in manufacturer by `code`, not pk:
+To search by code in manufacturer add `?code=` in the route and type the code number that want search:
 
     /marca/?code={code}
 
-Search in the cars, by manufacturer `pk` :
+To search by manufacturer in the cars, add  `?manufacturer=` in the route and type a manufacturer pk that want search:
 
     /veiculo/?manufacturer={pk}
 
