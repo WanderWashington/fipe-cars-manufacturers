@@ -39,6 +39,6 @@ Load the json with name `marcas.json`:
 ```python manage.py get_data```
 
     
-Get cars data of a website, using selenium to get data and save in database using Django methods:
+Get cars data from the website, using selenium to get data and save in database using Django methods:
 
 ```python manage.py scrap_data_selenium```
