@@ -2,21 +2,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
-Developed in Django and Django Rest Framework, this project contains a API to get a Cars and Manufacturers, based in FIPE. 
-### Endpoints:
-
-    /veiculo/    
-    /marca/    
-
-# Search parameter:
-
-To search by code in manufacturer add `?code=` in the route and type the `code` number that want search:
-
-    /marca/?code={code}
-
-To search by manufacturer in the cars, add  `?manufacturer=` in the route and type a manufacturer `pk` that want search:
-
-    /veiculo/?manufacturer={pk}
+Developed in Django and Django Rest Framework, this project contains a API to get a Cars and Manufacturers, based in FIPE.
 
 # Installation:
 1.  Install the requirements file, with the command:
@@ -32,6 +18,21 @@ To search by manufacturer in the cars, add  `?manufacturer=` in the route and ty
 3.  Load the fixtures with the cars and manufacturers data:
 
     ```python manage.py loaddata data.json```
+
+### Endpoints:
+
+    /veiculo/    
+    /marca/    
+
+# Search parameter:
+
+To search by code in manufacturer add `?code=` in the route and type the `code` number that want search:
+
+    /marca/?code={code}
+
+To search by manufacturer in the cars, add  `?manufacturer=` in the route and type a manufacturer `pk` that want search:
+
+    /veiculo/?manufacturer={pk}
 
 # Extra commands:
 
