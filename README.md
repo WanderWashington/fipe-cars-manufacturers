@@ -36,4 +36,4 @@ Command to load the json with name `marcas.json`:
     
 Command to get cars data of a website, using selenium to get data and save in database using Django methods:
 
-```python manage.py scrap_data```
+```python manage.py scrap_data_selenium```
