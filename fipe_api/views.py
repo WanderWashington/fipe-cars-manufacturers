@@ -16,7 +16,7 @@ from .serializers import VeiculoSerializer
 class MarcaViewSet(viewsets.ModelViewSet):
     queryset = Marca.objects.all()
     serializer_class = MarcaSerializer
-    # pagination_class = PaginacaoNumero
+    pagination_class = None
 
     def get_queryset(self):
         q = Q()
@@ -36,6 +36,8 @@ class VeiculoViewSet(viewsets.ModelViewSet):
         qs = super().get_queryset()
 
         if 'manufacturer' in self.request.GET:
-            # queryset = Veiculo.objects.get(manufacturer=self.request.GET['manufacturer'])
+            self.pagination_class = None
             q &= Q(manufacturer=self.request.GET['manufacturer'])
         return qs.filter(q)
+
+
