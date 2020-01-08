@@ -26,6 +26,7 @@ class MarcaViewSet(viewsets.ModelViewSet):
             q &= Q(code=self.request.GET['code'])
         return qs.filter(q)
 
+    
 class VeiculoViewSet(viewsets.ModelViewSet):
     queryset = Veiculo.objects.all()
     serializer_class = VeiculoSerializer
