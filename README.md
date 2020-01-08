@@ -17,7 +17,7 @@ Developed in Django and Django Rest Framework, this project contains a API to ge
 
 3.  Load the fixtures with the cars and manufacturers data:
 
-    ```python manage.py loaddata data.json```
+    ```python manage.py loaddata fipe_api.json```
 
 ### Endpoints:
 
