@@ -21,8 +21,7 @@ class Command(BaseCommand):
         marca_id = 1
         browser = webdriver.Chrome()
         browser.get('https://fipeapi.com.br/')
-        # browser.find_element_by_xpath("//div[text()='Consulta de Carros e Utilitários Pequenos']").click()
-        
+
         select_tipo_veiculo = Select(browser.find_element_by_id('fipe_tipos'))
         select_tipo_veiculo.select_by_visible_text('Carros')
  
@@ -34,7 +33,6 @@ class Command(BaseCommand):
         for opcao in options_marcas:
             print(opcao.get_attribute('text'))
             print(len(opcao.get_attribute('value')))
-            # x = int(opcao.get_attribute('value'))
             if opcao.get_attribute('value') != "" and opcao.get_attribute != '0':
 
                 marca_id = opcao.get_attribute('value') # pegando o value para passar a referencia no obj
@@ -46,10 +44,7 @@ class Command(BaseCommand):
                 for opcao_modelo in options_modelos:
                     modelos_carros.append({'code':opcao_modelo.get_attribute('value'), 'name':opcao_modelo.get_attribute('text'), 'manufacturer':marca_id})
                 print(modelos_carros)
-                # manufacturer = Marca.objects.get(code=opcao.get_attribute('value'))
-                # import pdb; pdb.set_trace()
                 try:
-                    # import pdb;pdb.set_trace()
                     modelos_carros.pop(0)
                     id_manufacturer = int(modelos_carros[0]['manufacturer'])
                     for carro in modelos_carros:
