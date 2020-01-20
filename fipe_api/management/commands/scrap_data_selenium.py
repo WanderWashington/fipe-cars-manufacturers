@@ -20,7 +20,7 @@ class Command(BaseCommand):
         modelos_carros = []
         marca_id = 1
         browser = webdriver.Chrome()
-        browser.get('https://fipeapi.com.br/')
+        browser.get('')  #add fipeapi address
 
         select_tipo_veiculo = Select(browser.find_element_by_id('fipe_tipos'))
         select_tipo_veiculo.select_by_visible_text('Carros')
