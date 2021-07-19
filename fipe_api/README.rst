@@ -30,26 +30,26 @@ Quick start
 Endpoints
 -----------
 
-`fipe_api/v1/veiculo/`
-`fipe_api/v1/marca/`
+* `fipe_api/v1/veiculo/`
+* `fipe_api/v1/marca/`
 
 Search Parameter
 ----------------
-To search by code in manufacturer add `?code=` in the route and type the code number that want search:
+To search by code in manufacturer add `?code=` in the route and type the code number that want search::
 
-/marca/?code={code}
+  /marca/?code={code}
 
-To search by manufacturer in the cars, add `?manufacturer=` in the route and type a manufacturer `pk` that want search:
+To search by manufacturer in the cars, add `?manufacturer=` in the route and type a manufacturer `pk` that want search::
 
-/veiculo/?manufacturer={pk}
+   /veiculo/?manufacturer={pk}
 
 Extra commands
 ---------------
 
-Load the json with name `marcas.json`:
+Load the json with name `marcas.json`::
 
-python manage.py get_data
+   python manage.py get_data
 
-Get cars data from the website, using selenium to get data and save in database using Django methods:
+Get cars data from the website, using selenium to get data and save in database using Django methods::
 
-python manage.py scrap_data_selenium
+   python manage.py scrap_data_selenium
