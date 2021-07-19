@@ -24,7 +24,7 @@ Quick start
 
 4. Run `python manage.py loaddata fixtures/fipe_api.json`
 
-5. Start the development server and visit http://127.0.0.1:8000/fipe_api/v1/
+5. Start the development server and visit the /fipe_api/v1/
    to access the api routes.
 
 Endpoints
